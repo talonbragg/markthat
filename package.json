@@ -1,0 +1,34 @@
+{
+  "name": "markthat",
+  "version": "0.0.1",
+  "description": "A module that parses markdown into HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talonbragg/markthat.git"
+  },
+  "keywords": [
+    "mark",
+    "that",
+    "markthat",
+    "html",
+    "to",
+    "markdown",
+    "markdown",
+    "parser"
+  ],
+  "author": "Talon Bragg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talonbragg/markthat/issues"
+  },
+  "homepage": "https://github.com/talonbragg/markthat#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.5"
+  }
+}

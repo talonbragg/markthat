@@ -11,10 +11,23 @@ A module that parses markdown into html
 
 **Usage:**
 
+Single line:
+
 ```javascript
 const markthat = require('markthat');
 
-markthat('**Bold**');
+markthat.markthat('**Bold**');
 
 //returns as: <strong>Bold</strong>
+```
+
+Whole file:
+
+```javascript
+const markthat = require('markthat');
+
+markthat.markthatFile('./README.md').then(thefile => {
+    console.log(thefile); //thefile is the parsed markdown
+    //do whatever you want with the parsed markdown
+});
 ```

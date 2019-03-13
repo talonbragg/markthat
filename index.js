@@ -16,7 +16,7 @@ module.exports = {
             .replace(/\![(.*?)]\((.*?)\)/ig, "<img alt=\'$1\' src=\'$2\'>") // Images
             .replace(/^\s*-\s+(.*?$)/ig, "<li>$1</li>") // List Element
             .replace(/\`(.*?)\`/ig, "<code>$1</code>") // Code
-            .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code></code></pre>"); // Code Blocks
+            .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code></code></pre>") // Code Blocks
     },
 
     markthatFile: function(file) {

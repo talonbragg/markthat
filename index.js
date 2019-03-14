@@ -45,7 +45,7 @@ module.exports = {
                     .replace(/^\s*-\s+(.*?$)/ig, "<li>$1</li>") // List Element
                     .replace(/\`(.*?)\`/ig, "<code>$1</code>") // Code
                     .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code>$1</code></pre>") // Code Blocks
-                    .replace(/^\s*>\s+(.*?$)/ig, "<blockquote>$1</blockquote>"); // Block Quotes
+                    .replace(/^\s*>\s+(.*?$)/ig, "<blockquote>$1</blockquote>") // Block Quotes
                 );
             });
         });

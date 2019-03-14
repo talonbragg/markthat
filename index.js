@@ -17,7 +17,7 @@ module.exports = {
             .replace(/^\s*-\s+(.*?$)/ig, "<li>$1</li>") // List Element
             .replace(/\`(.*?)\`/ig, "<code>$1</code>") // Code
             .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code></code></pre>") // Code Blocks
-            .replace(/^\s*>\s+(.*?$)/ig, '<blockquote>$1</blockquote>'); // Block Quotes
+            .replace(/^\s*>\s+(.*?$)/ig, "<blockquote>$1</blockquote>"); // Block Quotes
     },
 
     markthatFile: function(file) {
@@ -44,7 +44,7 @@ module.exports = {
                     .replace(/\![(.*?)]\((.*?)\)/ig, "<img alt=\'$1\' src=\'$2\'>") // Images
                     .replace(/^\s*-\s+(.*?$)/ig, "<li>$1</li>") // List Element
                     .replace(/\`(.*?)\`/ig, "<code>$1</code>") // Code
-                    .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code></code></pre>") // Code Blocks
+                    .replace(/\`\`\`(.*?)\`\`\`/ig, "<pre><code>$1</code></pre>") // Code Blocks
                     .replace(/^\s*>\s+(.*?$)/ig, '<blockquote>$1</blockquote>'); // Block Quotes
                 );
             });
